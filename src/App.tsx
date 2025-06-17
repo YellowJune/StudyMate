@@ -2,7 +2,18 @@ import React, { useEffect, useState } from "react";
 import { Calendar } from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import { v4 as uuidv4 } from "uuid";
+import React from 'react';
 
+const App = () => {
+  return (
+    <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
+      <h1>🎓 StudyMate 플래너</h1>
+      <p>이곳에서 개인별 학습 계획을 관리할 수 있습니다.</p>
+    </div>
+  );
+};
+
+export default App;
 interface PlanItem {
   text: string;
   completed: boolean;
